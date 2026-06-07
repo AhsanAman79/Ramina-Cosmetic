@@ -18,23 +18,3 @@ document.querySelectorAll('.nav-links a').forEach((a) =>
 
 // Current year
 document.getElementById('year').textContent = new Date().getFullYear();
-
-// Decorative Instagram gallery tiles linking to the profile.
-// Replace with the live Instagram feed once an API token / embed widget is available.
-const IG_URL = 'https://www.instagram.com/ramina.cosmetics';
-const tones = ['#c9a96a', '#b08d4f', '#8a6f48', '#d8c4a0', '#2d241b', '#a98a5c', '#e3d6c2', '#6e5837'];
-const grid = document.getElementById('ig-grid');
-if (grid) {
-  for (let i = 0; i < 8; i++) {
-    const a = document.createElement('a');
-    a.href = IG_URL;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.className = 'ig-tile reveal';
-    a.style.background = `linear-gradient(135deg, ${tones[i]}, ${tones[(i + 3) % tones.length]})`;
-    a.setAttribute('aria-label', 'Ramina Cosmetics auf Instagram ansehen');
-    a.textContent = '☼';
-    grid.appendChild(a);
-    io.observe(a);
-  }
-}

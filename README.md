@@ -25,8 +25,12 @@ Einfach `index.html` im Browser öffnen – keine Build-Schritte nötig (reines 
 ## Noch anzupassen
 
 1. **Domain:** In `index.html` (Canonical, OG-URLs), `sitemap.xml` und `robots.txt` ist `https://www.raminacosmetics.de/` als Platzhalter eingetragen. Bei Bedarf durch die echte Domain ersetzen.
-2. **Echte Fotos:** Die Studio-/Galeriebilder konnten nicht automatisch von Treatwell oder Instagram geladen werden (Instagram erfordert Login). Die Galerie zeigt aktuell dekorative Kacheln, die zum Instagram-Profil verlinken. Für einen echten Instagram-Feed eine Embed-Lösung einbinden (z. B. Instagram Basic Display API, EmbedSocial, LightWidget) – die Stelle ist in `script.js` markiert.
-3. **`og-image.jpg`:** Ein Vorschaubild unter `/assets/og-image.jpg` ablegen für Social-Sharing.
+2. **Eigene Fotos:** Hero-, Studio- und Galeriebilder unter `assets/` sind aktuell hochwertige, lizenzfreie Platzhalter (Unsplash). Für maximale Authentizität durch echte Studio-/Behandlungsfotos ersetzen – einfach die Dateien in `assets/` mit gleichem Namen überschreiben.
+3. **Instagram-Feed:** Die Galerie verlinkt zu [@ramina.cosmetics](https://www.instagram.com/ramina.cosmetics). Instagram lässt sich ohne Login nicht automatisch auslesen; für einen echten Live-Feed eine Embed-Lösung einbinden (z. B. LightWidget, EmbedSocial oder die Instagram Basic Display API).
+
+## Bilder
+
+Die Fotos unter `assets/` stammen von [Unsplash](https://unsplash.com) (kostenlose Lizenz) und sind web-optimiert (~60–370 KB).
 
 ## Kontaktdaten (Stand der Quelle)
 
