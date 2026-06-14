@@ -25,12 +25,12 @@
 <meta name="twitter:description" content="Exklusives Kosmetikstudio an der Frankfurter Hauptwache." />
 <meta name="twitter:image" content="https://ahsanaman79.github.io/Ramina-Cosmetic/assets/og-image.jpg" />
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111'/%3E%3Ctext x='50%25' y='54%25' font-family='Georgia,serif' font-size='18' fill='%23c9a96a' text-anchor='middle' dominant-baseline='middle'%3ER%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=2" />
+<link rel="stylesheet" href="styles.css?v=8" />
 
 <!-- JSON-LD Structured Data: BeautySalon -->
 <script type="application/ld+json">
@@ -72,7 +72,10 @@
 
 <header class="site-header" id="top">
   <nav class="nav container" aria-label="Hauptnavigation">
-    <a href="#top" class="brand">Ramina<span>Cosmetics</span></a>
+    <a href="#top" class="brand" aria-label="Ramina Cosmetics – zur Startseite">
+      <img src="assets/logo-light.svg" alt="Ramina Cosmetics" class="brand-logo brand-logo--light" width="58" height="52" />
+      <img src="assets/logo-dark.svg" alt="" aria-hidden="true" class="brand-logo brand-logo--dark" width="58" height="52" />
+    </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
     <label for="nav-toggle" class="nav-burger" aria-label="Menü öffnen"><span></span><span></span><span></span></label>
     <ul class="nav-links">
@@ -80,6 +83,7 @@
       <li><a href="#services">Behandlungen</a></li>
       <li><a href="#gallery">Galerie</a></li>
       <li><a href="#team">Team</a></li>
+      <li><a href="#testimonials">Bewertungen</a></li>
       <li><a href="#contact">Kontakt</a></li>
       <li><a class="btn btn-book" href="https://buchung.treatwell.de/ort/ramina-cosmetics/?utm_source=partner&utm_medium=partner-site-book-now-widget" target="_blank" rel="noopener">Termin buchen</a></li>
     </ul>
@@ -245,11 +249,68 @@
     </div>
     <div class="team-grid reveal">
       <article class="team-card">
-        <div class="team-avatar" aria-hidden="true">R</div>
+        <div class="team-avatar"><img src="assets/reihane.jpg?v=2" alt="Reihane, Inhaberin von Ramina Cosmetics" width="130" height="130" loading="lazy" /></div>
         <h3>Reihane</h3>
         <p>Inhaberin & Kosmetikerin</p>
         <p class="team-bio">Spezialistin für dauerhafte Laser-Haarentfernung und Gesichtsbehandlungen mit langjähriger Erfahrung und einem Auge fürs Detail.</p>
       </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Bewertungen</p>
+        <h2>Was unsere Kundinnen sagen</h2>
+        <p class="section-intro">Echte Stimmen von Gästen, die sich bei Ramina Cosmetics rundum wohlgefühlt haben.</p>
+      </div>
+      <div class="testimonial-slider reveal" data-slider>
+        <div class="slider-viewport">
+          <button class="slider-btn slider-prev" type="button" aria-label="Vorherige Bewertungen">&lsaquo;</button>
+          <div class="slider-track" tabindex="0" aria-label="Kundenbewertungen, horizontal scrollbar">
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Ich war bereits in mehreren Kosmetikstudios in Frankfurt, aber bei Ramina Cosmetics habe ich mich zum ersten Mal wirklich gut aufgehoben gefühlt. Die Beratung war ehrlich, professionell und auf meine Haut abgestimmt. Schon nach der ersten Gesichtsbehandlung hat meine Haut deutlich frischer und ebenmäßiger ausgesehen. Ich freue mich jedes Mal auf meinen Termin."</blockquote>
+          <figcaption><span class="t-name">Sarah M.</span><span class="t-role">34, Marketing Managerin</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Die Laser-Haarentfernung hat meine Erwartungen übertroffen. Mir wurde alles ausführlich erklärt und ich habe mich während der gesamten Behandlung sehr wohl gefühlt. Bereits nach wenigen Sitzungen waren die Ergebnisse sichtbar. Absolute Empfehlung für alle, die Wert auf Professionalität und Hygiene legen."</blockquote>
+          <figcaption><span class="t-name">Yasemin K.</span><span class="t-role">29, Bankkauffrau</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Ich habe ein Brow Lifting machen lassen und bin begeistert. Das Ergebnis sieht natürlich aus und hält deutlich länger als erwartet. Besonders gefallen hat mir die ruhige Atmosphäre und die liebevolle Betreuung. Man merkt sofort, dass hier mit Leidenschaft gearbeitet wird."</blockquote>
+          <figcaption><span class="t-name">Aylin D.</span><span class="t-role">31, Grafikdesignerin</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Meine Haut hatte lange mit Unreinheiten und Trockenheit zu kämpfen. Nach mehreren Behandlungen bei Ramina Cosmetics hat sich mein Hautbild sichtbar verbessert. Die Behandlungen werden individuell angepasst und man bekommt hilfreiche Tipps für die Pflege zu Hause. Vielen Dank für die tolle Arbeit!"</blockquote>
+          <figcaption><span class="t-name">Nadine W.</span><span class="t-role">39, Architektin</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Von der Terminvereinbarung bis zur Behandlung war alles perfekt organisiert. Besonders beeindruckt hat mich die persönliche Betreuung. Hier wird nicht einfach nur eine Behandlung durchgeführt, sondern wirklich auf die Wünsche und Bedürfnisse der Kundinnen eingegangen. Ich komme definitiv wieder."</blockquote>
+          <figcaption><span class="t-name">Miriam S.</span><span class="t-role">36, Personalreferentin</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Als Mann war ich anfangs etwas unsicher, ob eine professionelle Gesichtsbehandlung das Richtige für mich ist. Das Team hat mir sofort ein gutes Gefühl gegeben. Die Behandlung war äußerst angenehm und meine Haut sah danach deutlich frischer aus. Sehr professionell, diskret und absolut empfehlenswert."</blockquote>
+          <figcaption><span class="t-name">Daniel R.</span><span class="t-role">41, Unternehmensberater</span></figcaption>
+        </figure>
+
+          </div>
+          <button class="slider-btn slider-next" type="button" aria-label="Nächste Bewertungen">&rsaquo;</button>
+        </div>
+        <div class="slider-dots" aria-label="Bewertungen-Seiten"></div>
+      </div>
     </div>
   </section>
 
@@ -289,7 +350,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <a href="#top" class="brand">Ramina<span>Cosmetics</span></a>
+      <a href="#top" class="brand"><img src="assets/logo-light.svg" alt="Ramina Cosmetics" class="brand-logo" width="66" height="60" /></a>
       <p>Premium Kosmetikstudio im Herzen Frankfurts.</p>
     </div>
     <div>
@@ -316,6 +377,8 @@
 
 <a class="float-book" href="https://buchung.treatwell.de/ort/ramina-cosmetics/?utm_source=partner&utm_medium=partner-site-book-now-widget" target="_blank" rel="noopener" aria-label="Termin buchen">Termin buchen</a>
 
-<script src="script.js"></script>
+<button id="to-top" class="to-top" type="button" aria-label="Nach oben scrollen">&uarr;</button>
+
+<script src="script.js?v=3"></script>
 </body>
 </html>
